@@ -33,7 +33,7 @@
     gap: 50px;
 }
 
-.clickable span {
+.clickable #moving {
     position: relative;
     background: linear-gradient(45deg,#892066,#18457C);
     border-radius: 10px;
@@ -43,32 +43,32 @@
     bottom: 3px;
 }
 
-.clickable p:nth-child(1):hover~span {
+.clickable p:nth-child(1):hover~#moving {
     right: 87%;
     transition: 0.5s;
 }
 
-.clickable p:nth-child(2):hover~span {
+.clickable p:nth-child(2):hover~#moving {
     right: 68%;
     transition: 0.7s;
 }
 
-.clickable p:nth-child(3):hover~span {
+.clickable p:nth-child(3):hover~#moving {
     right: 47%;
     transition: 0.9s;
 }
 
-.clickable p:nth-child(4):hover~span {
+.clickable p:nth-child(4):hover~#moving {
     right: 26%;
     transition: 1s;
-    width: 105px;
+    width: 107px;
 }
 
 .router {
     font-size: 18px;
     margin-bottom: 6px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
     transition: color 0.3s;
     font-family: "Inter", sans-serif;
     z-index: 1;
@@ -79,3 +79,48 @@
     height: 50px;
     margin-bottom: 5px;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .navbar_logo{
+        width: 35px;
+        height: 35px;
+    }
+    .navbar {
+        display: flex;
+        width: 90%;
+        height: 35px;
+        padding-left: 15px;
+        gap: 30px;
+        margin-top: 80px;
+    }
+    .router {
+        font-size: 8px;
+    }
+    .clickable {
+        display: flex;
+        gap: 20px;
+    }
+    .clickable #moving {
+        border-radius: 5px;
+        width: 35px;
+        height: 18px;
+        right: 86%
+    }
+    .clickable p:nth-child(1):hover~#moving {
+        right: 86%;
+    }
+    .clickable p:nth-child(2):hover~#moving {
+        right: 67%;
+    }
+    .clickable p:nth-child(3):hover~#moving {
+        right: 46%;
+    }
+    .clickable p:nth-child(4):hover~#moving {
+        right: 24%;
+        width: 35px;
+    }
+    .us_show{
+        display: none;
+    }
+}
+
