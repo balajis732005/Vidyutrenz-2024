@@ -4,24 +4,28 @@
     background-size: cover;
     background-position: center;
 }
+
 .head{
-    color: white;
+    color: #FFFFFF;
     font-size: 80px;
-    margin: 10px;
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
 }
+
 .down{
-    color: white;
-    margin: 10px;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
 }
+
 .explore{
     color: white;
     background-color: #A41045;
     padding: 15px 25px;
     border-radius: 10px;
-    margin: 10px;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
 }
+
 .left_content{
     display: flex;
     flex-direction: column;
@@ -29,4 +33,5 @@
     align-items: start;
     margin: 100px;
     width: 50%;
+    gap: 30px;
 }
