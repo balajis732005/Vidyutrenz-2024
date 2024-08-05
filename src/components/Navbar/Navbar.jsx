@@ -16,6 +16,7 @@ const Navbar = () => {
                         <p className="router">About us</p>
                         <p className="router">Events</p>
                         <p className="router">Contact us</p>
+                        <span></span>
                     </div>
                 </div>
             </div>
