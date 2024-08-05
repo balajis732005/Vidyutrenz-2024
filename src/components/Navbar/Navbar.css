@@ -1,4 +1,4 @@
-.background_top{
+.background_navbar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +20,12 @@
     border: 1px solid gray;
 }
 
-.navbar .container {
+.clickable {
     display: flex;
     gap: 2rem;
 }
 
-.navbar .container h1 {
+.router {
     font-size: 18px;
     margin-bottom: 6px;
     cursor: pointer;
