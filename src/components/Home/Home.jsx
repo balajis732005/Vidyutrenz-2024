@@ -14,9 +14,9 @@ const Home = () => {
                     <div className="left_content">
                         <p className="head">Welcome To Vidyutrenz 2024</p>
                         <p className="down">Blending the Boundaries of Utopia and Dystopia</p>
-                        <button className="register_button">
+                        <a className="register_button">
                             Register Now
-                        </button>
+                        </a>
                     </div>
                     <div className="right_content">
                         <img src={header_logo}
@@ -24,6 +24,10 @@ const Home = () => {
                              className="header_logo"
                         />
                     </div>
+                </div>
+
+                <div className="middle_theme">
+                    <p className="theme_name">Blending the boundaries of Utopia and dystopia</p>
                 </div>
 
                 <div className="about_us">
