@@ -2,27 +2,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(150px);
     padding-left: 50px;
-    padding-right: 50px;
     padding-top: 0.5rem;
     border-radius: 1rem;
-    margin-top: 20px;
+    margin-top: 110px;
     color: white;
-    width: 95%;
-    height: 60px;
-    border: 1px solid gray;
+    width: 85%;
+    height: 65px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.navbar:hover{
+    box-shadow: 0 0 10px #A41045, 0 0 20px #A41045;
 }
 
 .clickable {
     display: flex;
-    gap: 2rem;
+    gap: 50px;
+}
+
+.clickable span {
+    position: relative;
+    background: linear-gradient(45deg,#892066,#18457C);
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    right: 87%;
+    bottom: 3px;
+}
+
+.clickable p:nth-child(1):hover~span {
+    right: 87%;
+    transition: 0.5s;
+}
+
+.clickable p:nth-child(2):hover~span {
+    right: 68%;
+    transition: 0.7s;
+}
+
+.clickable p:nth-child(3):hover~span {
+    right: 47%;
+    transition: 0.9s;
+}
+
+.clickable p:nth-child(4):hover~span {
+    right: 26%;
+    transition: 1s;
+    width: 105px;
 }
 
 .router {
@@ -31,13 +70,12 @@
     cursor: pointer;
     font-weight: 600;
     transition: color 0.3s;
-}
-
-.navbar .container h1:hover {
-    color: #ddd;
+    font-family: "Inter", sans-serif;
+    z-index: 1;
 }
 
 .navbar_logo{
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
 }
