@@ -1,0 +1,43 @@
+.background_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(200px);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 20px;
+    color: white;
+    width: 95%;
+    height: 60px;
+    border: 1px solid gray;
+}
+
+.navbar .container {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .container h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar .container h1:hover {
+    color: #ddd;
+}
+
+.navbar_logo{
+    width: 35px;
+    height: 35px;
+}

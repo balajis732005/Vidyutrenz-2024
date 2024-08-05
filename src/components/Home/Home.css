@@ -1,0 +1,32 @@
+.background{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.head{
+    color: white;
+    font-size: 80px;
+    margin: 10px;
+    font-family: Inter, sans-serif;
+}
+.down{
+    color: white;
+    margin: 10px;
+}
+.explore{
+    color: white;
+    background-color: #A41045;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.left_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 100px;
+    width: 50%;
+}
