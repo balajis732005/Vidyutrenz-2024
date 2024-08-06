@@ -1,9 +1,11 @@
-.background_navbar{
+/* Navbar.css */
+.background_navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,7 @@
     cursor: pointer;
 }
 
-.navbar:hover{
+.navbar:hover {
     box-shadow: 0 0 10px #A41045, 0 0 20px #A41045;
 }
 
@@ -72,16 +74,18 @@
     transition: color 0.3s;
     font-family: "Inter", sans-serif;
     z-index: 1;
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
 }
 
-.navbar_logo{
+.navbar_logo {
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .navbar_logo{
+    .navbar_logo {
         width: 35px;
         height: 35px;
     }
@@ -104,7 +108,7 @@
         border-radius: 5px;
         width: 35px;
         height: 18px;
-        right: 86%
+        right: 86%;
     }
     .clickable p:nth-child(1):hover~#moving {
         right: 86%;
@@ -119,8 +123,7 @@
         right: 24%;
         width: 35px;
     }
-    .us_show{
+    .us_show {
         display: none;
     }
 }
-

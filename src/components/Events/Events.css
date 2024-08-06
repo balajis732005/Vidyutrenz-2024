@@ -1,0 +1,157 @@
+/* Import existing styles */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #ff4fd8, 0 0 20px #ff4fd8, 0 0 30px #ff4fd8, 0 0 40px #ff4fd8;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff4fd8, 0 0 30px #ff4fd8, 0 0 40px #ff4fd8, 0 0 50px #ff4fd8;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff4fd8, 0 0 20px #ff4fd8, 0 0 30px #ff4fd8, 0 0 40px #ff4fd8;
+    }
+}
+
+@keyframes glow {
+    0% {
+        background-color: #ff4fd8;
+    }
+    50% {
+        background-color: #c13baf;
+    }
+    100% {
+        background-color: #ff4fd8;
+    }
+}
+
+/* Updated CSS to add gap between cards */
+.back {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floating 3s infinite ease-in-out;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px; /* Adjust gap between cards here */
+}
+
+/* Flip Card Styling */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px; /* Adds perspective to the container */
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    margin: 20px; /* Add margin to create space between cards */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* Add padding to ensure space for back faces */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    padding: 10px; /* Ensure space around the flipped card */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: calc(100% - 20px); /* Adjust for padding */
+    height: calc(100% - 20px); /* Adjust for padding */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-front {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover; /* Ensure background image covers the area */
+    background-position: center; /* Center the background image */
+    color: white;
+}
+
+.flip-card-front h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.flip-card-front p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.flip-card-back {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Ensure no overlap on back side by managing margins */
+.flip-card-back h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.flip-card-back p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Register button */
+.register-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    margin: 20px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #ff3311;
+    transform: scale(1.05);
+}
+
+
