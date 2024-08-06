@@ -45,22 +45,22 @@
 
 .clickable p:nth-child(1):hover~#moving {
     right: 87%;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .clickable p:nth-child(2):hover~#moving {
     right: 68%;
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 .clickable p:nth-child(3):hover~#moving {
     right: 47%;
-    transition: 0.9s;
+    transition: 0.4s;
 }
 
 .clickable p:nth-child(4):hover~#moving {
     right: 26%;
-    transition: 1s;
+    transition: 0.5s;
     width: 107px;
 }
 

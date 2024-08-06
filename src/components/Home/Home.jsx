@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
 
                 <div className="middle_theme">
-                    <p className="theme_name">Blending the boundaries of Utopia and dystopia</p>
+                    <p className="theme_name">Blending the boundaries of Utopia and Dystopia</p>
                 </div>
 
                 <div className="about_us">
