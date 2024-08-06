@@ -29,7 +29,6 @@ const Home = () => {
                 <div className="middle_theme">
                     <p className="theme_name">Blending the boundaries of Utopia and Dystopia</p>
                 </div>
-
             </div>
             <Footer />
         </>

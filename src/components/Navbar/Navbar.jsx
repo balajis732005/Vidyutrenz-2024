@@ -13,7 +13,9 @@ const Navbar = () => {
                     />
                     <div className="clickable">
                         <p className="router">Home</p>
-                        <p className="router">About <span className="us_show">us</span></p>
+                        <p className="router">
+                            About <span className="us_show">us</span>
+                        </p>
                         <p className="router">Events</p>
                         <p className="router">Contact <span className="us_show">us</span></p>
                         <span id="moving"></span>
