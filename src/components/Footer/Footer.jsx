@@ -1,15 +1,15 @@
 import React from 'react';
 import './Footer.css';
-import back_logo from '../../assets/navbar_logo.png';
 import youtube_logo from '../../assets/youtube_icon.svg';
 import linkedin_logo from '../../assets/twitter_icon.svg';
+import college_logo from '../../assets/cit_logo.png';
 
 const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
                 <div className="footer-section">
-                    <img src={back_logo} alt="Logo" className="logo" />
+                    <img src={college_logo} alt="Logo" className="logo" />
                 </div>
                 <div className="footer-section">
                     <h3>Socials</h3>
