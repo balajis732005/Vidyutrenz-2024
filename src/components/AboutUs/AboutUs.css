@@ -1,0 +1,20 @@
+.about_us{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 7%;
+    width: 40%;
+}
+
+.about_head{
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.about_content{
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+}
