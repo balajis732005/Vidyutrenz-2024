@@ -4,11 +4,13 @@ import Navbar from "../Navbar/Navbar.jsx";
 import back_logo from '../../assets/back_home.jpg';
 import header_logo from '../../assets/header_logo.svg';
 import Footer from "../Footer/Footer.jsx";
+import AboutUs from "../AboutUs/AboutUs.jsx";
 
 const Home = () => {
     return (
         <>
-            <div className="background" style={{backgroundImage: `url(${back_logo})`}}>
+            <div className="background" id="home_id"
+                 style={{backgroundImage: `url(${back_logo})`}}>
                 <Navbar/>
                 <div className="header">
                     <div className="left_content">
@@ -29,6 +31,7 @@ const Home = () => {
                 <div className="middle_theme">
                     <p className="theme_name">Blending the boundaries of Utopia and Dystopia</p>
                 </div>
+                <AboutUs />
             </div>
             <Footer />
         </>

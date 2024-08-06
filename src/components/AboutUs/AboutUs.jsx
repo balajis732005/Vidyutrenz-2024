@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUsExample = () => {
     return (
         <>
-            <div className="about_us">
+            <div className="about_us" id="about_us_id">
                 <p className="about_head">About Us</p>
                 <p className="about_content">
                     At Vidyutrenz, we’re at the forefront of electrical engineering and technology,

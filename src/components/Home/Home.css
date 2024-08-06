@@ -59,6 +59,7 @@
 }
 
 .register_button:hover {
+    transition: background-color 0.5s ease, letter-spacing 0.5s ease;
     background-color: #18457C;
     color: #0A0C10;
     font-weight: bolder;
