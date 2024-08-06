@@ -11,17 +11,19 @@
     background-color: transparent;
     backdrop-filter: blur(150px);
     padding-left: 50px;
-    padding-top: 0.5rem;
+    padding-right: 50px;
     border-radius: 1rem;
     margin-top: 110px;
-    color: white;
+    color: #FFFFFF;
     width: 85%;
     height: 65px;
+    line-height: 65px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: 1px rgba(0, 0, 0, 0.2) solid;
     position: fixed;
     z-index: 1000;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .navbar:hover{
@@ -31,47 +33,39 @@
 .clickable {
     display: flex;
     gap: 50px;
-}
-
-.clickable #moving {
-    position: relative;
-    background: linear-gradient(45deg,#892066,#18457C);
-    border-radius: 10px;
-    width: 90px;
-    height: 30px;
-    right: 87%;
-    bottom: 3px;
-}
-
-.clickable p:nth-child(1):hover~#moving {
-    right: 87%;
-    transition: 0.2s;
-}
-
-.clickable p:nth-child(2):hover~#moving {
-    right: 68%;
-    transition: 0.3s;
-}
-
-.clickable p:nth-child(3):hover~#moving {
-    right: 47%;
-    transition: 0.4s;
-}
-
-.clickable p:nth-child(4):hover~#moving {
-    right: 26%;
-    transition: 0.5s;
-    width: 107px;
+    align-items: center;
+    justify-content: center;
 }
 
 .router {
     font-size: 18px;
-    margin-bottom: 6px;
+    padding: 0 1rem;
+    display: block;
+    position: relative;
     cursor: pointer;
     font-weight: bold;
-    transition: color 0.3s;
-    font-family: "Inter", sans-serif;
-    z-index: 1;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: transform .65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.router:hover{
+    transform: rotateX(90deg);
+}
+
+.router::after{
+    background: linear-gradient(120deg, #E52996, #18457C);
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    padding: inherit;
+    color: #FFFFFF;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .navbar_logo{
@@ -80,47 +74,32 @@
     margin-bottom: 5px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-    .navbar_logo{
-        width: 35px;
-        height: 35px;
+.clickable:nth-child(odd){
+    animation: up 1s forwards;
+}
+
+.clickable:nth-child(even){
+    animation: down 1s forwards;
+}
+
+@keyframes up {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
     }
-    .navbar {
-        display: flex;
-        width: 90%;
-        height: 35px;
-        padding-left: 15px;
-        gap: 30px;
-        margin-top: 80px;
-    }
-    .router {
-        font-size: 8px;
-    }
-    .clickable {
-        display: flex;
-        gap: 20px;
-    }
-    .clickable #moving {
-        border-radius: 5px;
-        width: 35px;
-        height: 18px;
-        right: 86%
-    }
-    .clickable p:nth-child(1):hover~#moving {
-        right: 86%;
-    }
-    .clickable p:nth-child(2):hover~#moving {
-        right: 67%;
-    }
-    .clickable p:nth-child(3):hover~#moving {
-        right: 46%;
-    }
-    .clickable p:nth-child(4):hover~#moving {
-        right: 24%;
-        width: 35px;
-    }
-    .us_show{
-        display: none;
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
+@keyframes down {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

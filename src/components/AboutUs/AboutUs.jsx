@@ -1,10 +1,11 @@
 import React from 'react';
+import './AboutUs.css';
 
 const AboutUsExample = () => {
     return (
         <>
             <div className="about_us" id="about_us_id">
-                <p className="about_head">About Us</p>
+                <p className="about_head">About us</p>
                 <p className="about_content">
                     At Vidyutrenz, we’re at the forefront of electrical engineering and technology,
                     committed to delivering innovative solutions that drive progress and efficiency.

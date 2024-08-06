@@ -14,6 +14,7 @@ const Navbar = () => {
                     />
                     <div className="clickable">
                         <p className="router"
+                           data-text="Home"
                            onClick={() => {
                                const element = document.getElementById("home_id");
                                element?.scrollIntoView({
@@ -23,6 +24,7 @@ const Navbar = () => {
                             Home
                         </p>
                         <p className="router"
+                           data-text="About"
                            onClick={() => {
                                const element = document.getElementById("about_us_id");
                                element?.scrollIntoView({
@@ -30,11 +32,16 @@ const Navbar = () => {
                                })
                            }}
                         >
-                            About <span className="us_show">us</span>
+                            About
                         </p>
-                        <p className="router">Events</p>
-                        <p className="router">Contact <span className="us_show">us</span></p>
-                        <span id="moving"></span>
+                        <p className="router"
+                           data-text="Events">
+                            Events
+                        </p>
+                        <p className="router"
+                           data-text="Contact">
+                            Contact
+                        </p>
                     </div>
                 </div>
             </div>
