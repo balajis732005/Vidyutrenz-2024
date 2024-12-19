@@ -14,7 +14,7 @@ const Home = () => {
                 <Navbar/>
                 <div className="header">
                     <div className="left_content">
-                        <p className="head">Welcome To Vidyutrenz 2024</p>
+                        <p className="head">Welcome to Vidyutrenz 2025</p>
                         <p className="down">Blending the Boundaries of Utopia and Dystopia</p>
                         <a className="register_button">
                             Register Now

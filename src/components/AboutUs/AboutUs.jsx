@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './AboutUs.css';
-import about_img_1 from '../../assets/about_img_1.jpeg';
-import about_img_2 from '../../assets/about_img_2.jpeg';
-import about_img_3 from '../../assets/about_img_3.jpeg';
+import about_img_1 from '../../assets/about_img_1.png';
+import about_img_2 from '../../assets/about_img_2.png';
+import about_img_3 from '../../assets/about_img_3.png';
 
 const AboutUsExample = () => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -15,7 +15,7 @@ const AboutUsExample = () => {
     return (
         <>
             <div className="about_us_section" id="about_us_id">
-                <div className="about_us" id="about_us_id">
+                <div className="about_us">
                     <p className="about_head">About us</p>
                     <p className="about_content">
                         At Vidyutrenz, we’re at the forefront of electrical engineering and technology,
@@ -32,9 +32,10 @@ const AboutUsExample = () => {
                     </p>
                 </div>
                 <div className="about_slider">
-                    <img src={images[currentImage]}
-                         alt={`About IMG ${currentImage + 1}`}
-                         className="about_image"
+                    <img
+                        src={images[currentImage]}
+                        alt={`About IMG ${currentImage + 1}`}
+                        className="about_image"
                     />
                     <div className="radio_buttons">
                         {images.map((_, index) => (

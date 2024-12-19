@@ -11,11 +11,13 @@ footer {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .footer-section {
     min-width: 200px;
     margin-bottom: 20px;
+    flex: 1;
 }
 
 .footer-section h3 {
@@ -44,6 +46,7 @@ footer {
 
 .register-section {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -58,13 +61,11 @@ footer {
 }
 
 .register-button:hover {
-    transition: background-color 0.3s ease, letter-spacing 0.3s ease;
     background-color: #18457C;
     color: #0A0C10;
     font-weight: bolder;
     letter-spacing: 3px;
     box-shadow: 0 0 10px #18457C, 0 0 25px #18457C, 0 0 50px #18457C, 0 0 100px #18457C;
-    margin-left: 3%;
 }
 
 .footer-bottom {
@@ -79,10 +80,14 @@ footer {
 
 .social-icons {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.social-icons a {
-    margin: 0 5px;
+.social-icons a img {
+    width: 25px;
+    height: 25px;
 }
 
 .footer-legal {
@@ -106,4 +111,77 @@ footer {
 
 .logo {
     max-width: 150px;
+    position: relative;
+    top: -25px;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .register-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .register-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom p, .footer-legal p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .register-section {
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .register-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
 }
