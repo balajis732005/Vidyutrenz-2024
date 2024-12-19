@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.css';
 import youtube_logo from '../../assets/youtube_icon.svg';
-import linkedin_logo from '../../assets/twitter_icon.svg';
 import college_logo from '../../assets/cit_logo.png';
 
 const Footer = () => {
@@ -15,7 +14,6 @@ const Footer = () => {
                     <h3>Socials</h3>
                     <ul>
                         <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
                         <li><a href="#">LinkedIn</a></li>
                         <li><a href="#">Email</a></li>
                     </ul>
@@ -44,7 +42,6 @@ const Footer = () => {
                 <p>Chennai Institute Of Technology, Kundrathur Chennai.</p>
                 <div className="social-icons">
                     <a href="#"><img src={youtube_logo} alt="YouTube" /></a>
-                    <a href="#"><img src={linkedin_logo} alt="Twitter" /></a>
                 </div>
             </div>
             <div className="footer-legal">
@@ -52,7 +49,6 @@ const Footer = () => {
                 <a href="#">Cookie settings</a>
                 <a href="#">Terms and conditions</a>
                 <a href="#">Privacy policy</a>
-                <a href="#">Modern slavery statement</a>
             </div>
         </footer>
     );
