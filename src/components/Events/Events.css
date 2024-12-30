@@ -1,0 +1,55 @@
+.background_event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.tech {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tech:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.nontech {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+    cursor: pointer;
+    font-style: italic;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nontech:hover {
+    color: #28a745;
+    transform: scale(1.1);
+}
+
+.wordshop {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.wordshop:hover {
+    color: #dc3545;
+    transform: scale(1.1);
+}
