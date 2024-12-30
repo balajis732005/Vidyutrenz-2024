@@ -100,7 +100,6 @@ header{
     box-shadow: 0 0 20px #5F9EA0, 0 0 40px #097969;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
-
 .btn-bg:hover {
     background-color: #088F8F;
     color: #000;
