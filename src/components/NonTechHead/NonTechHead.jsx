@@ -1,13 +1,12 @@
 import React from 'react';
-import './TechHead.css';
-import college_logo from '../../assets/cit_logo.png';
-import tech_head_img from '../../assets/tech_head_img.jpg';
-import vidyutrenz_logo from '../../assets/vidyutrenz_logo.png';
-import back_logo from "../../assets/tech_head_back.png";
+import './NonTechHead.css';
+import back_logo from "../../assets/nontech_head_back.png";
+import college_logo from "../../assets/cit_logo.png";
+import tech_head_img from "../../assets/tech_head_img.jpg";
+import vidyutrenz_logo from "../../assets/vidyutrenz_logo.png";
 import Footer from "../Footer/Footer.jsx";
 
-const TechHead = () => {
-
+const NonTechHead = () => {
     return (
         <>
             <div className="body" style={{backgroundImage: `url(${back_logo})`}}>
@@ -45,7 +44,7 @@ const TechHead = () => {
                     <main>
                         <section className="section1">
                             <div className="part1">
-                                <h3>TECH EVENTS</h3>
+                                <h3>NON TECH EVENTS</h3>
                                 <p>Tech events such as CES, SXSW, and TechCrunch Disrupt, showcase the latest
                                     innovations
                                     and trends in technology. These events feature product launches, keynote speeches,
@@ -67,9 +66,9 @@ const TechHead = () => {
                     <img src={vidyutrenz_logo} alt=""/>
                 </aside>
             </div>
-            <Footer />
+            <Footer/>
         </>
     );
 };
 
-export default TechHead;
+export default NonTechHead;
