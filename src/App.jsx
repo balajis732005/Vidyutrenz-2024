@@ -5,6 +5,7 @@ import React from "react";
 import Events from "./components/Events/Events.jsx";
 import TechHead from "./components/TechHead/TechHead.jsx";
 import NonTechHead from "./components/NonTechHead/NonTechHead.jsx";
+import WorkshopHead from "./components/WorkshopHead/WorkshopHead.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
               <Route path="/events" element={<Events />} />
               <Route path="/tech_head" element={<TechHead />} />
               <Route path="/nontech_head" element={<NonTechHead />} />
+              <Route path="/workshop_head" element={<WorkshopHead />} />
           </Routes>
       </>
   )
