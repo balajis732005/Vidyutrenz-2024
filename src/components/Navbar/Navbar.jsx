@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Navbar.css';
 import navbar_logo from '../../assets/navbar_logo.png';
+import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -8,6 +9,13 @@ const Navbar = () => {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    const navigate = useNavigate();
+
+    const handleEventsClick = () => {
+        setMenuOpen(false);
+        navigate('/events');
+    }
 
     return (
         <div className="background_navbar">
@@ -34,7 +42,7 @@ const Navbar = () => {
                         About
                     </p>
                     <p className="router"
-                       onClick={() => setMenuOpen(false)}>
+                       onClick={handleEventsClick}>
                         Events
                     </p>
                     <p className="router"
