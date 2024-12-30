@@ -5,8 +5,15 @@ import tech_head_img from '../../assets/tech_head_img.jpg';
 import vidyutrenz_logo from '../../assets/vidyutrenz_logo.png';
 import back_logo from "../../assets/tech_head_back.png";
 import Footer from "../Footer/Footer.jsx";
+import {useNavigate} from "react-router-dom";
 
 const TechHead = () => {
+
+    const navigate= useNavigate();
+
+    const handleViewEventsClick = () => {
+        navigate("/tech_events");
+    }
 
     return (
         <>
@@ -54,7 +61,7 @@ const TechHead = () => {
                                     enthusiasts.
                                     They are vital for staying updated and fostering collabrations within the tech
                                     community.</p>
-                                <a className="btn-bg">View Events</a>
+                                <a className="btn-bg" onClick={handleViewEventsClick}>View Events</a>
                             </div>
                             <div className="part2">
                                 <a href="#"><img src={tech_head_img} alt="" className="img-active img-fluid"/></a>
