@@ -14,12 +14,16 @@ const Events = () => {
         navigate('/nontech_head');
     }
 
+    const handleWorshopClick = () => {
+        navigate('/workshop_head');
+    }
+
     return (
         <>
             <div className="background_event">
                 <h1 className="tech" onClick={handleTechClick}>Tech</h1>
                 <h1 className="nontech" onClick={handleNonTechClick}>NonTech</h1>
-                <h1 className="wordshop">Workshop</h1>
+                <h1 className="wordshop" onClick={handleWorshopClick}>Workshop</h1>
             </div>
         </>
     );
