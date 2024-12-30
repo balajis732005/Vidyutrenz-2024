@@ -4,6 +4,7 @@ import Home from "./components/Home/Home.jsx";
 import React from "react";
 import Events from "./components/Events/Events.jsx";
 import TechHead from "./components/TechHead/TechHead.jsx";
+import NonTechHead from "./components/NonTechHead/NonTechHead.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/events" element={<Events />} />
               <Route path="/tech_head" element={<TechHead />} />
+              <Route path="/nontech_head" element={<NonTechHead />} />
           </Routes>
       </>
   )
